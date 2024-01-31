@@ -1,0 +1,41 @@
+{
+    "configurations": [
+        {
+            "name": "nRF52832 DK",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/pca10040/blank/armgcc",
+                "${workspaceFolder}/../../../components/libraries/bsp/",
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/../../../../gcc-arm-none-eabi-9-2020-q2-update/arm-none-eabi/include",
+                "${workspaceFolder}/../../../../nRF5_SDK_17.1.0_ddde560/modules/**",
+                "${workspaceFolder}/../../../../nRF5_SDK_17.1.0_ddde560/components/**",
+                "${workspaceFolder}/../../../../nRF5_SDK_17.1.0_ddde560/external/**",
+                "${workspaceFolder}/../../../../nRF5_SDK_17.1.0_ddde560/integration/**"
+                
+            
+            ],
+            "defines": [
+                "BOARD_PCA10040",
+                "CONFIG_GPIO_AS_PINRESET",
+                "INITIALIZE_USER_SECTIONS",
+                "FLOAT_ABI_HARD",
+                "NRF52",
+                "NRF52832_XXAA",
+                "NRF_SD_BLE_API_VERSION=6",
+                "S132",
+                "SOFTDEVICE_PRESENT",
+                "SWI_DISABLE0"
+            ],
+            "macFrameworkPath": [
+                "/System/Library/Frameworks",
+                "/Library/Frameworks"
+            ],
+            "compilerPath": "${workspaceFolder}/../../../../gcc-arm-none-eabi-9-2020-q2-update/bin/arm-none-eabi-gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "macos-gcc-arm64"
+        }
+    ],
+    "version": 4
+}
